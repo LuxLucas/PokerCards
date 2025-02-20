@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 
-public class Deck {
+public class Deck implements IDeck{
+
     private ArrayList<Card> deck;
 
-    public void buildCards(){
+    private void buildCards(){
 
         // Diamonds
         deck.add(new Card(Card.DIAMONDS, Card.TWO));
