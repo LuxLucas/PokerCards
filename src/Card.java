@@ -1,4 +1,4 @@
-public class Card {
+public class Card implements ICard{
 
     private int suit;
     private int value;
