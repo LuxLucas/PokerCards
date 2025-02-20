@@ -71,18 +71,18 @@ public class Deck implements IDeck{
         buildCards();
     }
 
-    public Card top(){
+    public Card getTop(){
         if(!deck.isEmpty()){
             return deck.removeFirst();
         }
         return null;
     }
 
-    public void bottom(Card card){
+    public void setBottom(Card card){
         deck.addLast(card);
     }
 
-    public Card get(int index){
+    public Card getFrom(int index){
         if(index <= deck.size() -1 && index > -1){
             return deck.get(index);
         }

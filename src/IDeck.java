@@ -1,7 +1,7 @@
 public interface IDeck {
-    public Card top();
+    public Card getTop();
     public int size();
-    public Card get(int index);
-    public void bottom(Card card);
+    public Card getFrom(int index);
+    public void setBottom(Card card);
     public void replace(int index, Card card);
 }
