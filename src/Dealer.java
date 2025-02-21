@@ -1,6 +1,6 @@
 public class Dealer implements IDealer{
 
-    private Deck deck;
+    private Deck deck = new Deck();
 
     public Dealer(Deck deck){
         this.deck = deck;
@@ -14,8 +14,8 @@ public class Dealer implements IDealer{
             Card randomCard     = deck.getFrom(randomIndex);
             Card currentCard    = deck.getFrom(i);
 
-            deck.replace(randomIndex, randomCard);
-            deck.replace(i, currentCard);
+            deck.replace(randomIndex, currentCard);
+            deck.replace(i, randomCard);
         }
     }
 

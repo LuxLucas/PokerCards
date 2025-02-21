@@ -92,7 +92,7 @@ public class Card implements ICard{
                         |  |       |  |
                         |  |   %s   |  |
                         |  |       |  |
-                        |  |   %s    |  |
+                        |  |   %s   |  |
                         |  |       |  |
                         |  |   %s   |  |
                         |  |       |  |

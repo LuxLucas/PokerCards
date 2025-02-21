@@ -1,16 +1,17 @@
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> intArray = new ArrayList<Integer>();
-        intArray.add(2);
+        Deck deck = new Deck();
+        Dealer dealer = new Dealer(deck);
 
-        Card card = new Card(Card.DIAMONDS, Card.KING);
-        card.show();
-        card.faceUp();
-        card.show();
+        dealer.shuffle();
 
-        System.out.println(intArray.toString());
-        System.out.println(intArray.size());
+        while(deck.size() != 0){
+            System.out.println(deck.size());
+            Card card = dealer.dealCard();
+            card.faceUp();
+            card.show();
+        }
+
+        System.out.println(deck.size());
     }
 }
